@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jDQ-cQ-gIM" customClass="HeaderView" customModule="TableViewExercise" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="itt-9U-Imx">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Bj-IQ-3wt">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                            <connections>
+                                <action selector="tap" destination="jDQ-cQ-gIM" eventType="touchUpInside" id="QBm-Yk-35f"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="tableCellGroupedBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="7Bj-IQ-3wt" secondAttribute="bottom" id="Nfx-MW-0gb"/>
+                        <constraint firstItem="7Bj-IQ-3wt" firstAttribute="leading" secondItem="itt-9U-Imx" secondAttribute="leading" id="Toe-p2-IFm"/>
+                        <constraint firstAttribute="trailing" secondItem="7Bj-IQ-3wt" secondAttribute="trailing" id="edC-R4-f6s"/>
+                        <constraint firstItem="7Bj-IQ-3wt" firstAttribute="top" secondItem="itt-9U-Imx" secondAttribute="top" id="s8n-iy-DIg"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="KEYWORD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pi9-jo-1US">
+                    <rect key="frame" x="20" y="19.5" width="82" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="0Tb-iX-2wT"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="itt-9U-Imx" secondAttribute="bottom" id="DON-dG-RTZ"/>
+                <constraint firstAttribute="trailing" secondItem="itt-9U-Imx" secondAttribute="trailing" id="Hti-W3-BcN"/>
+                <constraint firstItem="itt-9U-Imx" firstAttribute="top" secondItem="jDQ-cQ-gIM" secondAttribute="top" id="TfG-r1-LeT"/>
+                <constraint firstItem="pi9-jo-1US" firstAttribute="centerY" secondItem="jDQ-cQ-gIM" secondAttribute="centerY" id="f7H-YP-ZUf"/>
+                <constraint firstItem="pi9-jo-1US" firstAttribute="leading" secondItem="jDQ-cQ-gIM" secondAttribute="leading" constant="20" id="kY4-bK-THm"/>
+                <constraint firstItem="itt-9U-Imx" firstAttribute="leading" secondItem="jDQ-cQ-gIM" secondAttribute="leading" id="xsu-ox-H3c"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="titleLabel" destination="pi9-jo-1US" id="N9l-KN-GH4"/>
+            </connections>
+            <point key="canvasLocation" x="87" y="83"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="tableCellGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

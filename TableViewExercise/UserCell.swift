@@ -21,3 +21,18 @@ class UserCell: UITableViewCell {
   }
 
 }
+
+class UserCollectionCell: UICollectionViewCell {
+  @IBOutlet weak var nameLabel: UILabel!
+  @IBOutlet weak var addressLabel: UILabel!
+  @IBOutlet weak var mobileLabel: UILabel!
+  @IBOutlet weak var emailLabel: UILabel!
+  
+  func configure(user: User){
+    nameLabel.text = user.name
+    addressLabel.text = user.address.fullAddress
+    mobileLabel.text = user.phone
+    emailLabel.text = user.email
+  }
+  
+}

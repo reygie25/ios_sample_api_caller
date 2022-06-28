@@ -7,6 +7,11 @@
 
 import Foundation
 
+struct UserList {
+  let headerTitle: String
+  let users: [User]
+}
+
 struct User: Codable {
   let id: Int
   let name, username, email: String
